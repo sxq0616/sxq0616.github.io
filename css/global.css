@@ -12,19 +12,67 @@
     text-align: center;
 }
 .page1{
-    background: red;
+    background: url('../img/img1.jpg');
+    background-size: 100%;
 }
 .page2{
-    background: yellow;
+    background: url('../img/img2.jpg');
+    background-size: 100%;
 }
 .page3{
-    background: maroon;
+    background: url('../img/img3.jpg');
+    background-size: 100%;
 }
 .page4{
-    background: green;
+    background: url('../img/img4.jpg');
+    background-size: 100%;
 }
 .page5{
-    background: blue;
+    background: url('../img/img5.jpg');
+    background-size: 100%;
+}
+.page6{
+    background: url('../img/img6.jpg');
+    background-size: 100%;
+}
+.page7{
+    background: url('../img/img7.jpg');
+    background-size: 100%;
+}
+.page8{
+    background: url('../img/img8.jpg');
+    background-size: 100%;
+}
+.page9{
+    background: url('../img/img9.jpg');
+    background-size: 100%;
+}
+.page10{
+    background: url('../img/img10.jpg');
+    background-size: 100%;
+}
+.page11{
+    background: url('../img/img11.jpg');
+    background-size: 100%;
+}
+.page12{
+    background: url('../img/img12.jpg');
+    background-size: 100%;
+}
+.page13{
+    background: url('../img/img13.jpg');
+    background-size: 100%;
+}
+.page14{
+    background: url('../img/img14.jpg');
+    background-size: 100%;
+}
+.page15{
+    background:white;
+}
+.word{
+    font-size: 16px;
+    line-height: 24px;
 }
 
 /* 箭头 */
