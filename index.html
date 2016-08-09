@@ -1,66 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>致晓青</title>
-    <style>
-
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
-    .show-text1 {
-        font-size: 3em;
-    	text-align: center;
-        animation: fade-in 4s 0s forwards ease-out;
-        animation-fill-mode: both;
-    }
-
-    .show-text2 {
-        font-size: 3em;
-    	text-align: center;
-        animation: fade-in 4s 2s forwards ease-out;
-        animation-fill-mode: both;
-    }
-
-    .show-text3 {
-        font-size: 3em;
-    	text-align: center;
-        animation: fade-in 4s 4s forwards ease-out;
-        animation-fill-mode: both;
-    }
-    </style>
-    <script type="text/javascript">
-    function startTime() {
-        var bornTime = (new Date("1993/12/21 14:45:00")).getTime(); //1970~出生 毫秒数
-        var passTime = (new Date("2073/12/21 14:45:00")).getTime(); //1970~死亡 毫秒数
-        var nowTime = Date.parse(new Date()); //1970~现在 毫秒数
-        var timewithYou = (passTime - nowTime) / (passTime - bornTime) * 100;
-        document.getElementById('txt').innerHTML = timewithYou + "%"
-        t = setTimeout('startTime()', 500)
-    }
-
-    function checkTime(i) {
-        if (i < 10) {
-            i = "0" + i
-        }
-        return i
-    }
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>基本用法</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/zepto.fullpage.css">
 </head>
-
 <body>
-
-    <body onload="startTime()">
-        <p class="show-text1">如果我能正正好好活到八十岁</p>
-        <p class="show-text2">那么我 <span id="txt"></span> 的余生</p>
-        <p class="show-text3">都要和你在一起</p>
-    </body>
-
+    <div class="wp">
+        <div class="wp-inner">
+            <div class="page page1">1</div>
+            <div class="page page2">2</div>
+            <div class="page page3">3</div>
+            <div class="page page4">4</div>
+        </div>
+    </div>
+    <span class="start"><b></b></span>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/zepto.fullpage.js"></script>
+    <script>
+        $('.wp-inner').fullpage();
+    </script>
+</body>
 </html>
